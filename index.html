@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description" content="Course Home Page for Web and Computer Programming Certificate">
+    <meta name="author" content="Godfred Opoku Yeboah">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Cormorant+Garamond&family=Edu+AU+VIC+WA+NT+Arrows&family=Edu+AU+VIC+WA+NT+Pre&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/course-home.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Image of Godfred" class="profile-pic">
+        <span class="name">Godfred Opoku Yeboah</span>
+    </header>
+
+    <nav>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="https://github.com/godfredyeboah">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/godfred-yeboah-324615288/">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+    
+        <div class="grid-container">
+            <section class="course-work box">
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+    
+            <section class="featured-location box">
+                <h2>Accra, Ghana</h2>
+                <img src="images/ghana.png" alt="Accra - Ghana">
+                <p>The Flag Stuff-House</p>
+            </section>
+        </div>
+    
+        <section class="course-certificates">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="CSE">CSE</button>
+                <button data-filter="WDD">WDD</button>
+            </div>
+            <div id="courses-container" class="course-grid"></div>
+        </section>
+    </main>
+
+<footer>
+    <p>&copy; <span id="currentyear"></span>🌻 Godfred Opoku Yeboah 🌻 Ghana</p> | <img src="images/ghana_flag.jpg" alt="">
+    <p id="lastModified"></p>
+ </footer> 
+</body>
+</html>
