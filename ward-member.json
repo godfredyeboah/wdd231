@@ -1,0 +1,33 @@
+{
+    "family_name": "Yeboah",
+    "move_in_date": "12-02-2025",
+    "number_of_people": 5,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Godfred Opoku Yeboah",
+            "gender": "Male",
+            "birthdate": "25-06-1992"
+        },
+        {
+            "name": "Wendy Pearl Opoku Yeboah",
+            "gender": "Female",
+            "birthdate": "12-02-1997"
+        },
+        {
+            "name": "Haisley Lameokor Opoku Yeboah",
+            "gender": "Female",
+            "birthdate": "25-02-2025"
+        },
+        {
+            "name": "Godfred Opoku Yeboah Jnr.",
+            "gender": "Male",
+            "birthdate": "27-08-2005"
+        },
+        {
+            "name": "Stephanie Owusu Yeboah",
+            "gender": "Female",
+            "birthdate": "23-06-2001"
+        }
+    ]
+}
