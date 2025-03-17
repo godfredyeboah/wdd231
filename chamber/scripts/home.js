@@ -30,17 +30,38 @@ async function loadWeather() {
     weatherInfo.innerHTML = "<p>Loading weather data...</p>";
 
     try {
-        const response = await fetch("https://api.weatherapi.com/v1/current.json?key=e335b95ae48944c18c5162632251703&q=Accra");
+        // Updated API URL to include a 3-day forecast
+        const response = await fetch("https://api.weatherapi.com/v1/forecast.json?key=e335b95ae48944c18c5162632251703&q=Accra&days=3");
         const data = await response.json();
 
-        const iconUrl = data.current.condition.icon; // Get weather icon URL
-        const conditionText = data.current.condition.text;
+        // Extract current weather details
+        const iconUrl = data.current.condition.icon; // Weather icon URL
+        const conditionText = data.current.condition.text; // Weather condition
+        const currentTemp = data.current.temp_c; // Current temperature
 
+        // Extract forecast data
+        let forecastHTML = `<h3>3-Day Forecast:</h3>`;
+        data.forecast.forecastday.forEach(day => {
+            forecastHTML += `
+                <div class="forecast-item">
+                    <p><strong>${day.date}</strong></p>
+                    <img src="https:${day.day.condition.icon}" alt="${day.day.condition.text}">
+                    <p>${day.day.condition.text}</p>
+                    <p>Max: ${day.day.maxtemp_c}°C | Min: ${day.day.mintemp_c}°C</p>
+                </div>
+            `;
+        });
+
+        // Update weather section with both current and forecast data
         weatherInfo.innerHTML = `
+            <h3>Current Weather</h3>
             <p>${data.location.name}, ${data.location.country}</p>
             <img src="https:${iconUrl}" alt="${conditionText}" width="50">
-            <p>Temperature: ${data.current.temp_c}°C</p>
-            <p>Condition: ${data.current.condition.text}</p>
+            <p>Temperature: ${currentTemp}°C</p>
+            <p>Condition: ${conditionText}</p>
+            <div class="forecast-container">
+                ${forecastHTML}
+            </div>
         `;
     } catch (error) {
         console.error("Weather API error:", error);

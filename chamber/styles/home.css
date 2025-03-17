@@ -88,6 +88,27 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
+/* Weather Forecast */
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.forecast-item {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-item img {
+    width: 40px;
+}
+
+
 /* Footer */
 footer {
     background-color: #0044cc;
