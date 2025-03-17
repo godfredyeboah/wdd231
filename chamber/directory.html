@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory</title>
+    <meta name="description" content="Directory of business members of the Chamber of Commerce">
+    <meta name="author" content="Godfred Opoku Yeboah">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Cormorant+Garamond&family=Edu+AU+VIC+WA+NT+Arrows&family=Edu+AU+VIC+WA+NT+Pre&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon (1).ico">
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Chamber Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://flagmatch.com/assets/capitals/accra-d123a9881af2e92f05d6c31eaa9d252679a52ec6374ebc1cb1e01cf4baff741d.webp">
+    <meta property="og:url" content="https://godfredyeboah.github.io/wdd231/">
+</head>
+<body>
+    <header>
+        <h1>Business Directory</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="view-toggle">
+            <button id="gridView" class="active">🔲</button>
+            <button id="listView">📄</button>
+        </div>
+        <div class="category-filter">
+            <button id="categoryButton">Select Category ⬇️</button>
+            <ul id="categoryList" class="hidden"></ul>
+        </div>
+        
+        <div id="directory" class="grid-view"></div>
+    </main>
+
+
+<footer>
+    <p>&copy; <span id="currentyear"></span>🌍 Chamber of Commerce 🌍 Ghana</p> 
+    <p id="lastModified"></p>
+    <nav class="sociallinks">
+        <a href="https://facebook.com">
+            <img src="images/facebook.svg.svg" alt="Facebook">
+        </a>
+        <a href="https://x.com">
+            <img src="images/x.svg.svg" alt="X">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram.svg.svg" alt="Instagram">
+        </a>
+        <a href="https://whatsapp.com">
+            <img src="images/whatsapp.svg.svg" alt="Whatsapp">
+        </a>
+       </nav>
+       <a href="https://app.moqups.com/dSlPEI2jwYvcZHAPvSZBsj0ehs3PNUal/view/page/ad72bb26f"> Index Wire Frame</a>
+ </footer> 
+</body>
+</html>

@@ -1,0 +1,239 @@
+/* Reset and General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #0044cc;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* View Toggle Buttons */
+.view-toggle {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.view-toggle button {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.view-toggle .active {
+    background: #007BFF;
+    color: white;
+}
+
+/* Directory Grid */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.grid-view .card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Mobile View - Stack Cards */
+@media (max-width: 768px) {
+    .grid-view {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+/* List View - Display as Line Items */
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-view .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9; /* Light background for zebra striping */
+}
+
+/* Zebra Striping */
+.list-view .card:nth-child(even) {
+    background-color: #e6e6e6; /* Slightly darker shade for odd items */
+}
+
+/* Ensure Image is Small */
+.list-view .card img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.list-view .card h3 {
+    flex-grow: 1;
+    font-size: 1.1rem;
+}
+
+.list-view .card a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.list-view .card:hover {
+    transform: scale(1.02);
+}
+
+/* Adjust Content Alignment */
+.list-view .card div {
+    flex-grow: 1;
+}
+
+.list-view .info-container {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.list-view .info-container p,
+.list-view .info-container a {
+    flex: 1;
+    text-align: center;
+}
+
+/* Category */
+/* Category Dropdown */
+.category-filter {
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+#categoryButton {
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#categoryList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: none; /* Hide initially */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#categoryList li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#categoryList li:hover {
+    background: #f4f4f4;
+}
+
+/* Show the dropdown when it's not hidden */
+#categoryList:not(.hidden) {
+    display: block;
+}
+
+
+
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+    color: var(--accent1-color);
+  }
+
+  footer .sociallinks {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  footer .sociallinks img {
+    width: 24px;
+    margin: 0 5px;
+  }
+  
+  /* Style for the wireframe link */
+ 
+a {
+  color: #5c0c0c;
+}

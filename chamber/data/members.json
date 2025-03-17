@@ -1,0 +1,85 @@
+{
+    "members": [
+        {
+            "name": "Tech Solutions Ltd.",
+            "category": "Technology",
+            "address": "123 Innovation Street, Accra",
+            "phone": "+233 50 123 4567",
+            "website": "https://techsolutions.com",
+            "image": "techsolutions-ltd.jpeg",
+            "membership": 3
+        },
+        {
+            "name": "Green Agriculture Ghana",
+            "category": "Agriculture",
+            "address": "456 Farm Road, Cape Coast",
+            "phone": "+233 54 987 6543",
+            "website": "https://greenagriculture.com",
+            "image": "Green Agriculture.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Gold Finance Group",
+            "category": "Finance",
+            "address": "789 Business Park, Kumasi",
+            "phone": "+233 55 678 9012",
+            "website": "https://goldfinance.com",
+            "image": "Gold finance Group.jpg",
+            "membership": 1
+        },
+        {
+            "name": "IDWEB",
+            "category": "Web Design",
+            "address": "2115 S Vista Avenue, Boise ID 83705",
+            "phone": "(208) 342-9386",
+            "website": "https://idahowebsites.com/",
+            "image": "IDWEB.png",
+            "membership": 3
+        },
+        {
+            "name": "Surge Web Design",
+            "category": "Web Design",
+            "address": "4072 E Arch Drive, Meridian ID 83846",
+            "phone": "(208) 031-0640",
+            "website": "https://www.surgewebdesign.com/",
+            "image": "Surge Web Design.png",
+            "membership": 2
+        },
+        {
+            "name": "Graphic Zen",
+            "category": "Web Design",
+            "address": "1788 E Summerplace Court, Meridian ID 83846",
+            "phone": "(208) 631-4984",
+            "website": "https://graphiczen.com/",
+            "image": "Graphic Zen.jpeg",
+            "membership": 2
+        },
+        {
+            "name": "Peppershock Media",
+            "category": "Media",
+            "address": "1215 3rd Street, Nampa ID 83651",
+            "phone": "(208) 461-5070",
+            "website": "https://www.peppershock.com/",
+            "image": "Peppershock Media.png",
+            "membership": 1
+        },
+        {
+            "name": "Flash Tech Services",
+            "category": "Technology",
+            "address": "Star Idaho 83669",
+            "phone": "(208) 488-5810",
+            "website": "https://flashtechnicalservices.com/",
+            "image": "Flash Tech services.webp",
+            "membership": 3
+        },
+        {
+            "name": "Dynotch Voyages",
+            "category": "Travel & Tour",
+            "address": "14 Gye Nyame Street, Taifa",
+            "phone": "+233 59 410 7787",
+            "website": "https://godfredyeboah.github.io/wdd131/project/index.html",
+            "image": "Logo.webp",
+            "membership": 4
+        }
+    ]
+}
