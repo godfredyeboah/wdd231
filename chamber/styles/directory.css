@@ -43,7 +43,7 @@ nav ul li a {
 }
 
 .view-toggle .active {
-    background: #007BFF;
+    background: #044386;
     color: white;
 }
 
@@ -74,7 +74,7 @@ nav ul li a {
 }
 
 .card a {
-    color: #007BFF;
+    color: #044386;
     text-decoration: none;
     font-weight: bold;
 }
@@ -128,7 +128,7 @@ nav ul li a {
 }
 
 .list-view .card a {
-    color: #007BFF;
+    color: #044386;
     text-decoration: none;
     font-weight: bold;
 }
@@ -165,8 +165,8 @@ nav ul li a {
 }
 
 #categoryButton {
-    background: #007BFF;
-    color: white;
+    background: #ffcc00;
+    color: black;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
@@ -235,5 +235,6 @@ footer {
   /* Style for the wireframe link */
  
 a {
-  color: #5c0c0c;
+  color: #e5d7d7;
+  text-decoration: none;
 }
