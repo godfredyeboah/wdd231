@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta name="description" content="Discover upcoming events, networking opportunities, and past events hosted by the Chamber of Commerce.">
+    <meta name="author" content="Godfred Opoku Yeboah">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Cormorant+Garamond&family=Edu+AU+VIC+WA+NT+Arrows&family=Edu+AU+VIC+WA+NT+Pre&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/events.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <!-- JavaScript -->
+    <script src="scripts/events.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Chamber Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://flagmatch.com/assets/capitals/accra-d123a9881af2e92f05d6c31eaa9d252679a52ec6374ebc1cb1e01cf4baff741d.webp">
+    <meta property="og:url" content="https://godfredyeboah.github.io/wdd231/">
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/events-hero.jpeg" alt="Business networking event">
+            <div class="hero-content">
+                <h2>Upcoming Events</h2>
+                <p>Connect, learn, and grow with the chamber's events.</p>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div class="events-list">
+                <div class="event">
+                    <h3>Business Networking Night</h3>
+                    <p><strong>Date:</strong> March 28, 2025</p>
+                    <p><strong>Location:</strong> Accra City Conference Hall</p>
+                    <p>Meet and connect with local business leaders in an engaging atmosphere.</p>
+                </div>
+                <div class="event">
+                    <h3>Entrepreneurship Workshop</h3>
+                    <p><strong>Date:</strong> April 15, 2025</p>
+                    <p><strong>Location:</strong> Accra Innovation Hub</p>
+                    <p>Learn from industry experts about starting and scaling your business.</p>
+                </div>
+                <div class="event">
+                    <h3>Annual Business Summit</h3>
+                    <p><strong>Date:</strong> June 10, 2025</p>
+                    <p><strong>Location:</strong> Ghana Trade Center</p>
+                    <p>A full-day event packed with keynote speakers, networking, and insights.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Highlights -->
+        <section class="event-highlights">
+            <h2>Featured Event</h2>
+            <div class="highlight">
+                <img src="images/conference.jpg" alt="People networking at an event">
+                <div class="highlight-text">
+                    <h3>Leadership Conference 2025</h3>
+                    <p><strong>Date:</strong> July 22, 2025</p>
+                    <p><strong>Location:</strong> Accra Business Center</p>
+                    <p>Gain insights from top business leaders and network with professionals.</p>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Events -->
+        <section class="past-events">
+            <h2>Past Events</h2>
+            <div id="past-events-gallery" class="gallery"></div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Don't Miss Out!</h2>
+            <p>Join our upcoming events and grow your business network.</p>
+            <a href="join.html" class="cta-button">Become a Member</a>
+        </section>
+    </main>
+
+<footer>
+    <p>&copy; <span id="currentyear"></span>🌍 Chamber of Commerce 🌍 Ghana</p> 
+    <p id="lastModified"></p>
+    <nav class="sociallinks">
+        <a href="https://facebook.com">
+            <img src="images/facebook.svg.svg" alt="Facebook">
+        </a>
+        <a href="https://x.com">
+            <img src="images/x.svg.svg" alt="X">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram.svg.svg" alt="Instagram">
+        </a>
+        <a href="https://whatsapp.com">
+            <img src="images/whatsapp.svg.svg" alt="Whatsapp">
+        </a>
+       </nav>
+       <a href="https://app.moqups.com/dSlPEI2jwYvcZHAPvSZBsj0ehs3PNUal/view/page/ad72bb26f"> Index Wire Frame</a>
+ </footer> 
+</body>
+</html>
