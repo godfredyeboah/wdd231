@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta name="description" content="Join the Chamber of Commerce to access exclusive business opportunities, networking events, and more.">
+    <meta name="author" content="Godfred Opoku Yeboah">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Cormorant+Garamond&family=Edu+AU+VIC+WA+NT+Arrows&family=Edu+AU+VIC+WA+NT+Pre&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <!-- JavaScript -->
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Chamber Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://flagmatch.com/assets/capitals/accra-d123a9881af2e92f05d6c31eaa9d252679a52ec6374ebc1cb1e01cf4baff741d.webp">
+    <meta property="og:url" content="https://godfredyeboah.github.io/wdd231/">
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/network-event2.jpeg" alt="Business networking event">
+            <div class="hero-content">
+                <h2>Join Us Today</h2>
+                <p>Connect with us today and enjoy amazing offers while you grow with the chamber.</p>
+            </div>
+        </section>
+        
+        <!-- Membership Form -->
+        <section class="form-section">
+            
+            <form action="thankyou.html" method="get">
+                <label>
+                    First Name:
+                    <input type="text" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+
+                <label>
+                    Last Name:
+                    <input type="text" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+
+                <label>
+                    Organizational Title:
+                    <input type="text" name="organization-title" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" required>
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@example.com" required>
+                </label>
+
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                </label>
+
+                <label>
+                    Business/Organization Name:
+                    <input type="text" name="business-name" title="Enter your business name" autocomplete="organization" required>
+                </label>
+
+                <label>
+                    Membership Level:
+                    <select name="membership-level" title="Select your membership level" required>
+                        <option value="" disabled selected>Select a membership level</option>
+                        <option value="np">NP Membership (Non-profit - Free)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business/Organization Description:
+                    <textarea name="business-description" title="Provide a short description of your organization"></textarea>
+                </label>
+
+                <!-- Hidden Timestamp -->
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit" >Submit Application</button>
+            </form>
+        </section>
+
+        <!-- Membership Level Cards -->
+        <section class="membership-cards">
+            <h2>Membership Levels</h2>
+            <div class="cards-container">
+                <div class="card np" onclick="openModal('np-modal')">
+                    <h3>NP Membership</h3>
+                    <p>No fee - Non-profits only</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card bronze" onclick="openModal('bronze-modal')">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic membership benefits</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card silver" onclick="openModal('silver-modal')">
+                    <h3>Silver Membership</h3>
+                    <p>Extended benefits and event discounts</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card gold" onclick="openModal('gold-modal')">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits, ads, and VIP events</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Modals (Hidden Initially) -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('np-modal')">&times;</span>
+                <h3>NP Membership</h3>
+                <p>Non-profit organizations get free membership with basic benefits.</p>
+            </div>
+        </div>
+
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+                <h3>Bronze Membership</h3>
+                <p>Includes networking opportunities and member discounts.</p>
+            </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+                <h3>Silver Membership</h3>
+                <p>Enhanced marketing exposure and priority event access.</p>
+            </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+                <h3>Gold Membership</h3>
+                <p>Premium exposure, VIP events, and priority support.</p>
+            </div>
+        </div>
+    </main>
+
+
+<footer>
+    <p>&copy; <span id="currentyear"></span>🌍 Chamber of Commerce 🌍 Ghana</p> 
+    <p id="lastModified"></p>
+    <nav class="sociallinks">
+        <a href="https://facebook.com">
+            <img src="images/facebook.svg.svg" alt="Facebook">
+        </a>
+        <a href="https://x.com">
+            <img src="images/x.svg.svg" alt="X">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram.svg.svg" alt="Instagram">
+        </a>
+        <a href="https://whatsapp.com">
+            <img src="images/whatsapp.svg.svg" alt="Whatsapp">
+        </a>
+       </nav>
+       <a href="https://app.moqups.com/dSlPEI2jwYvcZHAPvSZBsj0ehs3PNUal/view/page/ad72bb26f"> Index Wire Frame</a>
+ </footer> 
+</body>
+</html>
