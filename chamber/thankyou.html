@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory</title>
-    <meta name="description" content="Directory of business members of the Chamber of Commerce">
+    <title>Chamber of Commerce</title>
+    <meta name="description" content="Thank you for you for your membeship.">
     <meta name="author" content="Godfred Opoku Yeboah">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Cormorant+Garamond&family=Edu+AU+VIC+WA+NT+Arrows&family=Edu+AU+VIC+WA+NT+Pre&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- Favicon -->
-    <link rel="icon" href="favicon (1).ico">
+    <link rel="icon" href="favicon.ico">
     <!-- JavaScript -->
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content="Chamber Directory Page">
@@ -24,30 +24,15 @@
 </head>
 <body>
     <header>
-        <h1>Business Directory</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Discover</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
-                <li><a href="join.html">Join Us</a></li>
-            </ul>
-        </nav>
+        <h1>Thank You for Your Submission!</h1>
     </header>
 
-    <main>
-        <div class="view-toggle">
-            <button id="gridView" class="active">🔲</button>
-            <button id="listView">📄</button>
-        </div>
-        <div class="category-filter">
-            <button id="categoryButton">Select Category ⬇️</button>
-            <ul id="categoryList" class="hidden"></ul>
-        </div>
-        
-        <div id="directory" class="grid-view"></div>
+    <main class="thank-you-container">
+        <h2>Submitted Details</h2>
+        <p>Your membership application has been received successfully. Here are your details:</p>
+        <div id="submission-details"></div>
+        <a href="index.html" class="back-home">Return to Home</a>
     </main>
-
 
 <footer>
     <p>&copy; <span id="currentyear"></span>🌍 Chamber of Commerce 🌍 Ghana</p> 

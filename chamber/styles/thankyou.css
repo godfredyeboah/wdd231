@@ -1,0 +1,85 @@
+/* General Page Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #0044cc;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.thank-you-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#submission-details {
+    text-align: left;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-home:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+    color: var(--accent1-color);
+  }
+
+  footer .sociallinks {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  footer .sociallinks img {
+    width: 24px;
+    margin: 0 5px;
+  }
+  
+  /* Style for the wireframe link */
+ 
+a {
+  color: #e5d7d7;
+  text-decoration: none;
+}

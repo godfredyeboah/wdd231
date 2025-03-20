@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce</title>
-    <meta name="description" content="Official Chamber of Commerce website for local businesses and networking opportunities.">
+    <meta name="description" content="Contact us for more enquiries.">
     <meta name="author" content="Godfred Opoku Yeboah">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Cormorant+Garamond&family=Edu+AU+VIC+WA+NT+Arrows&family=Edu+AU+VIC+WA+NT+Pre&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
     <!-- JavaScript -->
-    <script src="scripts/home.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content="Chamber Directory Page">
@@ -24,10 +23,10 @@
 </head>
 <body>
     <header>
-        <h1>Chamber of Commerce</h1>
+        <h1>Contact Us</h1>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="events.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join Us</a></li>
@@ -36,54 +35,37 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <img src="images/hero-1.jpeg" alt="City view with business district">
-            <div class="hero-content">
-                <h2>Empowering Local Businesses</h2>
-                <p>Join the Chamber of Commerce and grow your business today.</p>
-                <a href="about.html" class="cta-button">About Us</a>
-            </div>
+        <section class="contact-info">
+            <h2>Our Contact Details</h2>
+            <p><strong>Address:</strong> 123 Commerce Street, Accra, Ghana</p>
+            <p><strong>Email:</strong> info@chamberghana.com</p>
+            <p><strong>Phone:</strong> +233 24 000 1234</p>
         </section>
 
-        <!-- Featured Businesses -->
-        <section class="featured-businesses">
-            <h2>Featured Businesses</h2>
-            <div id="featured-business-list" class="business-container">
-                <!-- JavaScript will insert business cards here -->
-            </div>
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="thankyou.html" method="get">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
         </section>
 
-        <!-- Community Information -->
-        <section class="community-info">
-            <h2>Community Highlights</h2>
-            <p>Stay updated with the latest news and initiatives in our local business community.</p>
-        </section>
-
-        <!-- Weather Section -->
-        <section class="weather">
-            <h2></h2>
-            <div id="weather-info">
-                <!-- JavaScript will load weather data here -->
-            </div>
-        </section>
-
-        <!-- Calls to Action -->
-        <section class="cta">
-            <h2>Get Involved</h2>
-            <p>Explore events, connect with other businesses, and make an impact.</p>
-            <a href="events.html" class="cta-button">Discover</a>
-        </section>
-
-        <!-- Business Spotlights -->
-        <section class="business-spotlights">
-            <h2>Business Spotlights</h2>
-            <div id="business-spotlight-list">
-                <!-- JavaScript will dynamically load spotlight businesses here -->
-            </div>
+        <section class="map">
+            <h2>Our Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.06682932556!2d-0.2625535909614251!3d5.603717894146325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b3eecba1b37%3A0x3f9258b2e560db11!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1710865670000"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
         </section>
     </main>
-
 
 <footer>
     <p>&copy; <span id="currentyear"></span>🌍 Chamber of Commerce 🌍 Ghana</p> 
