@@ -31,6 +31,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a.active::before {
+    font-weight: bold;
+    text-decoration: underline;
+    color: yellow; /* Change color to stand out */
+    content: "📍"; /* just a wayfinding symbol for the user */
+}
+
 .contact-info,
 .contact-form,
 .map {
