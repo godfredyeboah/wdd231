@@ -1,8 +1,10 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    max-width: 100%;
     margin: 0;
     padding: 0;
+    padding-top: 25px; /* Prevent content from being hidden under the fixed message */
     background: #f4f4f4;
 }
 
@@ -185,4 +187,19 @@ footer {
 a {
   color: #e5d7d7;
   text-decoration: none;
+}
+
+.local-storage-message {
+    background: #ffcc00;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 12px; /* Make it tiny */
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
 }

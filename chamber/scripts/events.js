@@ -19,3 +19,24 @@ document.addEventListener("DOMContentLoaded", () => {
         pastEventsContainer.appendChild(img);
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const messageContainer = document.createElement("div");
+    messageContainer.classList.add("local-storage-message");
+
+    let lastVisit = localStorage.getItem("lastVisit");
+    let currentTime = Date.now();
+
+    if (!lastVisit) {
+        messageContainer.innerHTML = `<p>Welcome! This is your first time visiting the Discover page.</p>`;
+    } else {
+        let lastVisitDate = new Date(parseInt(lastVisit));
+        messageContainer.innerHTML = `<p>Welcome back! Your last visit was on ${lastVisitDate.toDateString()} at ${lastVisitDate.toLocaleTimeString()}.</p>`;
+    }
+
+    localStorage.setItem("lastVisit", currentTime);
+
+    // Append the message to the bottom of the page
+    document.body.appendChild(messageContainer);
+});
