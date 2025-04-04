@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     margin: 0;
     padding: 0;
     padding-top: 25px; /* Prevent content from being hidden under the fixed message */
