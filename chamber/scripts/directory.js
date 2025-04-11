@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             card.classList.add("card");
 
             card.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name} Logo">
+                <img src="images/${member.image}" alt="${member.name} Logo" loading="lazy">
                 <h3>${member.name}</h3>
                 <div class="info-container">
                     <p class="address">${member.address}</p>
@@ -68,7 +68,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Toggle category dropdown visibility
     categoryButton.addEventListener("click", () => {
-        categoryList.classList.toggle("hidden");
+        const isHidden = categoryList.classList.toggle("hidden");
+        if (isHidden) {
+            categoryButton.innerHTML = "Select Category ⬇️";
+        } else {
+            categoryButton.innerHTML = "Select Category ⬆️";
+        }
     });
 
     gridViewBtn.addEventListener("click", () => {
@@ -87,3 +92,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetchMembers();
 });
+
+// Morphy hamburger Menu and Main Nav fade Animation
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const mainNav = document.querySelector("#main-nav ul");
+
+    menuToggle.addEventListener("click", () => {
+        mainNav.classList.toggle("show");
+        menuToggle.classList.toggle("open"); // 🔁 Toggle the hamburger animation
+    });
+});
+
+
+  

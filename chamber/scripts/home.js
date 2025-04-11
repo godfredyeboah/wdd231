@@ -14,7 +14,7 @@ async function loadFeaturedBusinesses() {
         const card = document.createElement("div");
         card.classList.add("card");
         card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name} Logo">
+            <img src="images/${member.image}" alt="${member.name} Logo" loading="lazy">
             <h3>${member.name}</h3>
             <p>${member.address}</p>
             <p>${member.phone}</p>
@@ -96,7 +96,7 @@ async function loadBusinessSpotlight() {
             const card = document.createElement("div");
             card.classList.add("card");
             card.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name} Logo" onerror="this.onerror=null; this.src='images/default.jpg';">
+                <img src="images/${member.image}" alt="${member.name} Logo" onerror="this.onerror=null; this.src='images/default.jpg';" loading="lazy">
                 <h3>${member.name}</h3>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
@@ -110,3 +110,14 @@ async function loadBusinessSpotlight() {
         spotlightList.innerHTML = "<p>Error loading spotlight businesses.</p>";
     }
 }
+
+// Morphy hamburger Menu and Main Nav fade Animation
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const mainNav = document.querySelector("#main-nav ul");
+
+    menuToggle.addEventListener("click", () => {
+        mainNav.classList.toggle("show");
+        menuToggle.classList.toggle("open"); // 🔁 Toggle the hamburger animation
+    });
+});

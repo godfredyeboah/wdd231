@@ -36,6 +36,122 @@ nav ul li a.active::before {
     content: "📍"; /* just a wayfinding symbol for the user */
 }
 
+/* Hide hamburger on wide screens */
+#menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1001;
+  }
+  
+  #menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.4s ease;
+  }
+  
+  /* Hamburger to X animation */
+  #menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  #menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+  /* Make nav horizontal by default */
+  nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  
+  /* Small screens */
+  /* Responsive Nav */
+  @media (max-width: 768px) {
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    
+    header {
+        position: relative;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.01rem;
+    background: #0044cc;
+    color: white;
+      }
+
+      h1 {
+        text-align: center;
+        padding-left: 60px;
+    }
+    
+      #menu-toggle {
+        display: flex;
+        margin-left: auto;
+        margin-right: 9px;
+        margin-bottom: 30px;
+      }
+    
+      #main-nav {
+        position: absolute;
+        top: 60px; /* Adjust depending on header height */
+        right: 20px;
+        width: 200px;
+        background-color: #0044cc;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        overflow: hidden;
+        z-index: 1000;
+      }
+    
+      #main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        transition: max-height 0.4s ease, opacity 0.3s ease;
+      }
+    
+      #main-nav ul.show {
+        max-height: 300px; /* Enough for menu items */
+        opacity: 1;
+      }
+    
+      #main-nav ul li {
+        width: 100%;
+      }
+    
+      #main-nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    
+      #main-nav ul li a:hover {
+        background-color: #033a99;
+      }
+    }
+  
+
 /* Hero Section */
 .hero {
     position: relative;
